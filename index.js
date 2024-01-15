@@ -5,7 +5,7 @@ const dotenv = require("dotenv").config();
 
 const app = express();
 app.use(cors(
-  {origin: "*"}
+  {origin: "*",}
 ));
 app.use(express.json({ limit: "10mb" }));
 

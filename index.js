@@ -4,9 +4,9 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv").config();
 
 const app = express();
-app.use(cors(
-  {origin: "*",}
-));
+app.use(cors({
+  origin: "*",
+}));
 app.use(express.json({ limit: "10mb" }));
 
 const PORT = process.env.PORT || 8080;

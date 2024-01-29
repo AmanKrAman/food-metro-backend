@@ -4,8 +4,11 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv").config();
 
 const app = express();
+// app.use(cors({
+//   origin: '*',
+// }));
 app.use(cors({
-  origin: "*",
+  origin: 'https://food-metro.vercel.app'
 }));
 app.use(express.json({ limit: "10mb" }));
 
